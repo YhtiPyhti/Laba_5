@@ -1,6 +1,6 @@
 #include "Header.h"
 // Установка имени самолета
-void CREATE_PLANE::set_name(string text) {
+map <string, vector<string>> CREATE_PLANE::set_name(string text) {
     string s, n;
     vector<string> v;
     int i = 0;
@@ -19,9 +19,19 @@ void CREATE_PLANE::set_name(string text) {
     v.push_back(s);
     s.clear();
     plane[n] = v;
-}
-
-map <string, vector<string>> CREATE_PLANE::get_name() {
     return plane;
 }
+
+
+map <string, vector<string>> PLANES::get_name(map <string, vector<string>> a) {
+    for (auto i : a) {
+        cout << i.first << " ";
+        for (auto j : i.second) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return a;
+}
+
 

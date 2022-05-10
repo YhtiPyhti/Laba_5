@@ -6,23 +6,24 @@ enum class Plane {
     PLANES
 };
 
-
-
 int main() {
-    bool x = 1;
-    CREATE_PLANE type;
+    CREATE_PLANE Type;
+    //PLANES_FOR_TOWN yellow;
+    //TOWNS_FOR_PLANE eaze_y;
+    PLANES Name;
     map <string, vector<string>> mplane;
-    while (x) {
+    while (1) {
         int s = 0;
         string Text;
 
         cout << "What do you want? CREATE_PLANE(1), PLANES_FOR_TOWN(2), TOWNS_FOR_PLANE(3), PLANES(4), EXIT(5)." << endl;
         cin >> s;
+
         switch (s) {
         case 1:
             cin.ignore();
             getline(cin, Text);
-            type.set_name(Text);
+            mplane = Type.set_name(Text);
             break;
         case 2:
 
@@ -33,14 +34,7 @@ int main() {
 
             break;
         case 4:
-            mplane = type.get_name();
-            for (auto i : mplane) {
-                cout << i.first << " ";
-                for (auto j : i.second) {
-                    cout << j << " ";
-                }
-                cout << endl;
-            }
+            Name.get_name(mplane);
             break;
 
         case 5:
