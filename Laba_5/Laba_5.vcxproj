@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="Laba_5.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="zad_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
+    <ClInclude Include="zad_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
