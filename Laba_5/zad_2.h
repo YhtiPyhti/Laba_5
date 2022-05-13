@@ -16,7 +16,7 @@ class NEXT {
 public:
     map <int, vector<string>> newlesson;
     int a = 0;
-    vector<string> s;
+    vector<string> s, p ;
     map <int, vector<string>> next_month(map <int, vector<string>> lesson, int n);
 };
 

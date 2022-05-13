@@ -24,40 +24,76 @@ map <int, vector<string>> NEXT :: next_month(map <int, vector<string>> lesson, i
         s.insert(s.end(), i.second.begin(), i.second.end());
         switch (n % 12) {
         case 1:
-            if (a == 31) newlesson.insert({ a - 1,s }); // c мая на июнь
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });// c мая на июнь
+                newlesson.insert({ a, p});
+            }
             break;
         case 2:
-            if (a == 30) newlesson.insert({ a - 1,s });// c июня на июль
+            if (a == 30) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 3:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 4:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 5:
-            if (a == 30) newlesson.insert({ a - 1,s });
+            if (a == 30) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 6:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 7:
-            if (a == 30) newlesson.insert({ a - 1,s });
+            if (a == 30) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 8:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 9:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 10:
-            if (a == 28) newlesson.insert({ a - 1,s });
+            if (a == 28) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 11:
-            if (a == 31) newlesson.insert({ a - 1,s });
+            if (a == 31) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         case 12:
-            if (a == 30) newlesson.insert({ a - 1,s });
+            if (a == 30) {
+                newlesson.insert({ a - 1,s });
+                newlesson.insert({ a, p });
+            }
             break;
         }
     }
